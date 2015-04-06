@@ -1,21 +1,30 @@
 {
-  "manifest_version" : 2,
-  "name": "RSS Fetcher",
-  "version": "0.1",
+	"manifest_version": 2,
+	"name": "Robux Trade Bot",
+	"version": "0.1",
 
-  "description": "Keep up with the latest from Lifehacker.",
-  "icons": { "16" : "images/icon.png",
- 			"48" : "images/48.png",
-			"128" : "images/128.png"},
-  "homepage_url": "http://lifehacker.com/",
+	"description": "Show me the Robux.",
+	"icons": { "16" : "images/icon.png",
+				"48" : "images/48.png",
+				"128" : "images/128.png"},
+	"homepage_url": "http://web.roblox.com/My/Money.aspx",
+	
 	"background": {
-    "page" : "background.html" },
+	    "scripts": [
+	    	"scripts/jquery-1.6.1.min.js",
+	    	"scripts/bg_fetch.js",
+	    	"scripts/bot.js"
+	    ]
+	},
+	
 	"permissions": [
-	  "http://feeds.gawker.com/*"
+	  "http://web.roblox.com/My/Money.aspx*/*",
+	  "notifications"
 	],
+	
 	"browser_action": {
-    "default_icon": "images/icon.png", 
-    "default_title": "Lifehacker Notifier",      
-    "default_popup": "popup.html"       
-  }
+    	"default_icon": "images/icon.png", 
+    	"default_title": "Robux Trade Bot",      
+    	"default_popup": "popup.html"
+    }
 }
